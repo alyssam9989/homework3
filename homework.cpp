@@ -73,7 +73,7 @@ int main() {
 		if (totalCost <= budget && numberOfDesserts >= 5) {
 			cout << "Great job! You're using your budget wisely!\n";
 		}
-		else if (totalCost > BUDGET && numberOfDesserts < 3) {
+		else if (totalCost > budget && numberOfDesserts < 3) {
 			cout << "You might want to adjust your ingredients, bake fewer items.\n";
 		} 
 		else {
