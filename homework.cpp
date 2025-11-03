@@ -6,7 +6,6 @@ using namespace std;
 
 int main() {
 	const string FILE_NAME = "report.txt";
-	const double BUDGET = 50.0;
 
 	cout << "===========================================" << endl;
 	cout << "Welcome to Alyssa's Baking Cost Calculator!" << endl;
@@ -16,6 +15,7 @@ int main() {
 	int numberOfDesserts = 0;
 	double costPerDessert = 0.00;
 	double totalCost = 0.00;
+	double budget = 0.00;
 
 	//prompt user for information
 	cout << "Enter the name of your recipe: ";
@@ -31,6 +31,9 @@ int main() {
 
 	cout << "Enter the cost per dessert quantity ($): ";
 	cin >> costPerDessert;
+
+	cout << "What is your overall budget?: ";
+	cin >> budget;
 
 	while (cin.fail() || costPerDessert <= 0) {
 		cin.clear();
@@ -67,7 +70,7 @@ int main() {
 		break;
 
 	case 2:
-		if (totalCost <= BUDGET && numberOfDesserts >= 5) {
+		if (totalCost <= budget && numberOfDesserts >= 5) {
 			cout << "Great job! You're using your budget wisely!\n";
 		}
 		else if (totalCost > BUDGET && numberOfDesserts < 3) {
