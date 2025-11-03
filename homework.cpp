@@ -45,6 +45,8 @@ int main() {
 	//calculate cost to make specific amount of dessert
 	totalCost = numberOfDesserts * costPerDessert;
 
+	cout << "Total cost: $" << totalCost << endl;
+
 	//print menu
 	int choice;
 	cout << "\nMenu: \n";
